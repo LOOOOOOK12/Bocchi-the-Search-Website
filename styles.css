@@ -1,0 +1,59 @@
+ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0 ;
+    outline: none;
+    
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+}
+
+.Search_Box{
+    background-color: rgb(253, 125, 146);
+    height: 200px;
+    width: 100px;
+    border-radius:30px ;
+    height: 200px;
+    width: 700px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+.Search_barbtn{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_Search{
+    background-color: transparent;
+    border:1px solid #fff ;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px;
+    width: 100px;
+    height: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+#textBox{
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    border:1px solid #fff ;
+    color:white;
+    width: 200px;
+    padding: 0.5em;
+}
