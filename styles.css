@@ -5,7 +5,8 @@
     margin: 0;
     border: 0 ;
     outline: none;
-    
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -17,21 +18,22 @@ body{
     background: pink;
 }
 
-.Search_Box{
+.Search_container{
     background-color: rgb(253, 125, 146);
     height: 200px;
     width: 100px;
     border-radius:30px ;
-    height: 200px;
+    height: 250px;
     width: 700px;
     padding: 30px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
         
 }
 .Search_barbtn{
-    margin: 30px;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,11 +44,13 @@ body{
     color: #fff;
     border-radius: 20px;
     cursor: pointer;
-    margin: 20px;
-    width: 100px;
-    height: 50px;
+    margin: 10px;
+    width: 200px;
+    height: 40px;
     transition: all 0.2s ease-in-out;
+    transition: 0.5s;
 }
+
 
 #textBox{
     background-color: transparent;
@@ -54,6 +58,18 @@ body{
     text-align: center;
     border:1px solid #fff ;
     color:white;
-    width: 200px;
+    margin: 10px;
+    height: 40px;
+    width: 450px;
     padding: 0.5em;
+}
+
+.btn_Search:hover{
+    background-color: rgb(239,219,122);
+    
+}
+
+#textBox:hover{
+    background-color: rgb(83,113,147);
+    transition: 0.5s;
 }
