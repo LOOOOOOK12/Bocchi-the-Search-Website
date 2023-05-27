@@ -1,23 +1,21 @@
-let isExpanded = false; // keep track of whether the container is currently expanded
+const toggle = document.getElementById('darkmode');
+const body = document.querySelector('body');
+const container = document.getElementById('SearchContainer');
 
-function expandContainer() {
-  const container = document.getElementById("SearchContainer");
-  if (!isExpanded) {
-    // expand the container if it's not already expanded
-    container.style.width = "750px";
-    container.style.height = "800px";
-    container.style.overflow = "auto";
-    isExpanded = true;
-  } else {
-    // reset the container to its original size if it's already expanded
-    container.style.width = "";
-    container.style.height = "";
-    container.style.overflow = "";
-    isExpanded = false;
-  }
-}
 
-const expandButton = document.getElementById("BTN_Search");
-if(expandButton){
-  expandButton.addEventListener("click", expandContainer);
-}
+toggle.addEventListener('click',function(){
+  
+        if(this.classList.toggle('darkmode')){
+          body.style.background = 'pink';
+          body.style.transition = '0.5s';
+          container.style.background = 'rgb(253, 125, 146)';
+        }
+        else{
+          body.style.background='#466DFF';
+          body.style.transition = '0.5s';
+          container.style.background = '#3A6EA5';
+          body.style.transition = '0.5s';
+          toggle.style.border = '3px solid pink';
+        }
+
+})
