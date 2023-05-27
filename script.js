@@ -4,11 +4,12 @@ const container = document.getElementById('SearchContainer');
 
 
 toggle.addEventListener('click',function(){
-  
+
         if(this.classList.toggle('darkmode')){
           body.style.background = 'pink';
           body.style.transition = '0.5s';
           container.style.background = 'rgb(253, 125, 146)';
+          toggle.style.border = '3px solid #466DFF';
         }
         else{
           body.style.background='#466DFF';
