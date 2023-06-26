@@ -11,6 +11,9 @@ const newImageSrc = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAA
 const body = document.querySelector('body');
 const container = document.getElementById('SearchContainer');
 
+//TextBox
+const textbox = document.getElementById('textbox');
+
 //Darkmode Button Functions
 toggle.addEventListener('click',function(){
         if(this.classList.toggle('darkmode')){
@@ -41,5 +44,16 @@ searchBTN.addEventListener('click',function(){
     container.style.height= '750px';
     container.style.transition = '0.5s';
   }
-
 })
+
+//container will not expand if the textbox is not equal to bocchi the rock
+
+// searchBTN.addEventListener('click', function() {
+//   if (textbox.value === 'bocchi the rock') {
+//     container.style.height = '1000px';
+//     container.style.transition = '0.5s';
+//   } else {
+//     textbox.value = 'wrong';
+//     container.style.height = 'inherit';
+//   }
+// });
